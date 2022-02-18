@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Lab</title>
+  <link rel="stylesheet" href="Garrido_A_formstyle.css">
+</head>
+<body>
+
+<div id="wrapper">
+  <h1>The Form to End All Forms</h1>
+
+  <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+    <label class="label">Name:</label><br>
+    <input type="text" name="name"><br><br>
+
+    <label class="label">Favorite Browser:</label><br>
+    <input type="radio" id="chrome" name="fave_browser" value="Chrome">
+    <label for="chrome">Chrome</label><br>
+    <input type="radio" id="explorer" name="fave_browser" value="Explorer">
+    <label for="explorer">Explorer</label><br>
+    <input type="radio" id="firefox" name="fave_browser" value="Firefox">
+    <label for="firefox">Firefox</label><br>
+    <input type="radio" id="opera" name="fave_browser" value="Opera">
+    <label for="opera">Opera</label><br><br>
+
+    <label class="label">Favorite OS:</label><br>
+    <input list="opsystem" name="systems">
+    <datalist id="opsystem">
+      <option value="Windows">
+      <option value="macOS">
+      <option value="Linux">
+    </datalist><br><br>
+
+    <input type="submit" value="send">
+    <input type="reset" value="reset"><br><br>
+  </form>
+</div>
+
+</body>
+</html>
